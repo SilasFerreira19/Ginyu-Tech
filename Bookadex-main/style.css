@@ -153,8 +153,8 @@ nav div a {
 }
 
 /* Seção de personagens */
-.character-section,
-.ranking-challenges-section {
+.character-section
+{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -162,10 +162,48 @@ nav div a {
     padding: 40px 80px;
 }
 
+/* Seção de ranking e desafios */
+.ranking-challenges-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de igual largura */
+    gap: 0px;
+    margin: 60px;
+}
+
+.ranking-container {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: flex-start; /* Alinha à esquerda */
+    text-align: left;
+    color: white;
+    padding-right: 20px; /* Espaço entre as colunas */
+}
+
+.challenges-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinha à direita */
+    text-align: right;
+    color: white;
+    padding-left: 20px; /* Espaço entre as colunas */
+}
+
+/* Remova as regras max-width desnecessárias */
 .character-content,
 .ranking-challenges-container {
-    max-width: 50%;
     color: white;
+}
+
+.ranking-medalha { /* Novo estilo para a medalha */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-bottom: 20px; /* Espaço abaixo da medalha */
+}
+
+.ranking-medalha img {
+    max-width: 150px; /* Ajuste o tamanho da medalha */
+    height: auto;
 }
 
 .character-content h2,
@@ -190,6 +228,17 @@ nav div a {
     max-width: 530px;
     border-radius: 10px;
     margin-right: 50px;
+}
+
+.medal-image {
+    display: grid;
+    gap: 20px;
+    margin: 60px;
+}
+
+.medal-image img {
+    height: auto;
+    border-radius: 10px;
 }
 
 .btn.primary {
