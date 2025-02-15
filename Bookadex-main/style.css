@@ -153,8 +153,7 @@ nav div a {
 }
 
 /* Seção de personagens */
-.character-section
-{
+.character-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -162,66 +161,52 @@ nav div a {
     padding: 40px 80px;
 }
 
-/* Seção de ranking e desafios */
-.ranking-challenges-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Duas colunas de igual largura */
-    gap: 0px;
-    margin: 60px;
-}
-
-.ranking-container {
-    display: flex;
-    flex-direction: column; /* Alinha os itens verticalmente */
-    align-items: flex-start; /* Alinha à esquerda */
-    text-align: left;
-    color: white;
-    padding-right: 20px; /* Espaço entre as colunas */
-}
-
-.challenges-description {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Alinha à direita */
-    text-align: right;
-    color: white;
-    padding-left: 20px; /* Espaço entre as colunas */
-}
-
-/* Remova as regras max-width desnecessárias */
-.character-content,
-.ranking-challenges-container {
+.character-content {
+    max-width: 50%;
     color: white;
 }
 
-.ranking-medalha { /* Novo estilo para a medalha */
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    margin-bottom: 20px; /* Espaço abaixo da medalha */
-}
-
-.ranking-medalha img {
-    max-width: 150px; /* Ajuste o tamanho da medalha */
-    height: auto;
-}
-
-.character-content h2,
-.ranking-challenges-container h2 {
+.character-content h2 {
     color: #00c285;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-.character-description h3,
-.ranking-challenges-container h3 {
+.character-description {
+    margin-bottom: 15px;
+}
+
+.character-description h3 {
     font-size: 1.2rem;
     margin-bottom: 5px;
 }
 
-.character-description p,
-.ranking-challenges-container p {
+.character-description p {
     color: #a0a0a0;
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn.primary {
+    background-color: #d73030;
+    color: white;
+}
+
+.btn.secondary {
+    background-color: #e5e5e5;
+    color: #d73030;
+    margin-right: 350px;
 }
 
 .character-image img {
@@ -230,45 +215,73 @@ nav div a {
     margin-right: 50px;
 }
 
-.medal-image {
-    display: grid;
-    gap: 20px;
-    margin: 60px;
+/* Seção de ranking e desafios */
+.ranking-challenges-section {
+    background-color: #1c1c1c; /* Fundo escuro */
+    padding: 50px 0;
+    text-align: center;
 }
 
-.medal-image img {
-    height: auto;
-    border-radius: 10px;
+.ranking-challenges-container {
+    max-width: 1000px;
+    margin: auto;
 }
 
-.btn.primary {
-    background-color: #d73030;
+.ranking-challenges-container h2 {
+    color: #00c285;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Layout flexível para centralizar os elementos */
+.ranking-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Estilos dos textos */
+.ranking-description,
+.challenges-description {
+    flex: 1;
     color: white;
-    padding: 10px 30px;
-    font-size: 16px;
-    border-radius: 5px;
-    text-decoration: none;
+    max-width: 300px;
 }
 
-.btn.secondary {
-    background-color: #e5e5e5;
-    color: #d73030;
-    padding: 10px 30px;
-    font-size: 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-right: 350px;
+.ranking-description h3,
+.challenges-description h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-.btn.primary.ranking,
-.btn.secondary.ranking {
+.ranking-description p,
+.challenges-description p {
+    font-size: 1rem;
+    color: #a0a0a0;
+    line-height: 1.5;
+}
+
+/* Estilização da medalha */
+.medal-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
     background-color: #fab60a;
     color: #1c1c1c;
-    padding: 10px 30px;
+    padding: 10px 20px;
     font-size: 16px;
+    font-weight: bold;
     border-radius: 5px;
     text-decoration: none;
+    margin-top: 15px;
 }
+
 
 /* Responsividade */
 @media (max-width: 768px) {
