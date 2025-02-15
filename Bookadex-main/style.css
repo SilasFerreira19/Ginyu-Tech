@@ -385,6 +385,78 @@ nav div a {
     opacity: 0.8;
 }
 
+footer {
+    background-color: #fff;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Garante que todos fiquem alinhados no topo */
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    gap: 10px;
+    min-height: 80px; /* Ajusta para alinhar visualmente */
+}
+
+.footer-section h4 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-section p {
+    margin: 0;
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Alinha as imagens no centro */
+}
+
+.social-icons a img {
+    width: 24px; /* Define um tamanho para os ícones */
+    height: 24px;
+    filter: grayscale(100%); /* Deixa os ícones em preto e branco */
+    transition: filter 0.3s ease;
+}
+
+.social-icons a img:hover {
+    filter: grayscale(0%); /* Deixa os ícones coloridos ao passar o mouse */
+}
+
+.footer-logo {
+    font-weight: bold;
+    font-size: 18px;
+    align-self: center;
+}
 
 /* Responsividade */
 @media (max-width: 768px) {
