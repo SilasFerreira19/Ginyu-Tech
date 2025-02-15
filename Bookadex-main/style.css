@@ -195,7 +195,6 @@ nav div a {
     font-size: 1rem;
     border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .btn.primary {
@@ -280,6 +279,110 @@ nav div a {
     border-radius: 5px;
     text-decoration: none;
     margin-top: 15px;
+}
+
+/* Seção de avaliações */
+.reviews-section {
+    background-color: #1c1c1c;
+    text-align: center;
+    padding: 60px;
+}
+
+.reviews-section h2 {
+    color: #00c285;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.review-card p {
+    font-size: 1.1rem;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reviewer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.reviewer-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.reviewer-info strong {
+    font-size: 1rem;
+    color: #000;
+}
+
+.reviewer-info span {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+}
+
+/* GINYU TECH */
+.conheca-ginyu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 40px;
+}
+
+.conheca-ginyu h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.black {
+    background-color: #000;
+    color: #fff;
+}
+
+.green {
+    background-color: #00d0a7;
+    color: #000;
+}
+
+.btn:hover {
+    opacity: 0.8;
 }
 
 
