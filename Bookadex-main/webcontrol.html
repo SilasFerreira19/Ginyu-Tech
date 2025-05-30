@@ -48,7 +48,7 @@
             <button onclick="goToPage(1)" class="slider-button">Registrar Perguntas</button>
             <button onclick="goToPage(2)" class="slider-button">Gerenciar Perguntas</button>
             <button onclick="goToPage(3)" class="slider-button">Registrar Livro</button>
-            <button onclick="goToPage(4)" class="slider-button">Opção 5</button>
+            <button onclick="goToPage(4)" class="slider-button">Gerenciar Livros</button>
         </div>
 
         <div class="slider-container">
@@ -57,9 +57,9 @@
                     <h2>Gerenciar Usuários</h2>
                 </div>
                 <div class="page page2">
-                    <form class="quiz-create" action="" method="post">
+                    <form class="quiz-create" action="/Bookadex-main/regquiz.php" method="post">
                         <div class="quiztitle">
-                            <h2>Criar Quiz</h2>
+                            <h2>Registrar Pergunta</h2>
                         </div>
                         <label>Selecione o livro:</label>
                         <div class="carrousel">
@@ -102,18 +102,20 @@
                         <label>Alternativas:</label>
                         <p style="font-size: 20px;">Marque a alternativa correta</p>
                         <div>
-                            <input type="text" id="alt1"><input type="radio" name="isCorrect" value="A">
+                            <input type="text" class="answerfield" id="alt1"><input type="radio" name="isCorrect" value="A">
                         </div>
                         <div>
-                            <input type="text" id="alt1"><input type="radio" name="isCorrect" value="A">
+                            <input type="text" class="answerfield" id="alt1"><input type="radio" name="isCorrect" value="B">
                         </div>
                         <div>
-                            <input type="text" id="alt1"><input type="radio" name="isCorrect" value="A">
+                            <input type="text" class="answerfield" id="alt1"><input type="radio" name="isCorrect" value="C">
                         </div>
                         <div>
-                            <input type="text" id="alt1"><input type="radio" name="isCorrect" value="A">
+                            <input type="text" class="answerfield" id="alt1"><input type="radio" name="isCorrect" value="D">
                         </div>
-                        <br>
+                        <div class="submitdiv">
+                            <input type="submit" value="Registrar" class="submitbtn">
+                        </div>
                     </form>
                 </div>
                 <div class="page page3">Page 3</div>
