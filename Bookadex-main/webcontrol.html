@@ -86,10 +86,10 @@
                         </div>
                         <h3>Pergunta:</h3>
                         <textarea class="question" type="text" placeholder="Digite a pergunta" maxlength="155"></textarea>
-                        <div class="difficulty">
+                        <div class="selectdiv">
                         <label style="margin-right: 50px;">Dificuldade:</label>
                         <div class="custom-select" id="difficultyDropdown">
-                            <div class="select-selected" data-value="normal">Normal</div>
+                            <div class="select-selected-difficulty" data-value="normal">Normal</div>
                             <div class="select-items select-hide">
                             <div data-value="easy">Fácil</div>
                             <div data-value="normal">Normal</div>
@@ -114,13 +114,56 @@
                             <input type="text" class="answerfield" id="alt1"><input type="radio" name="isCorrect" value="D">
                         </div>
                         <div class="submitdiv">
+                            <input type="reset" value="Resetar" class="submitbtn">
                             <input type="submit" value="Registrar" class="submitbtn">
                         </div>
                     </form>
                 </div>
-                <div class="page page3">Page 3</div>
-                <div class="page page4">Page 4</div>
-                <div class="page page5">Page 5</div>
+                <div class="page page3">
+                    <h2>Gerenciar Perguntas</h2>
+                </div>
+                <div class="page page4">
+                    <form class="quiz-create" action="/Bookadex-main/regbook.php" method="post" enctype="multipart/form-data">
+                        <div class="quiztitle">
+                            <h2>Registrar Livro</h2>
+                        </div>
+                        <div class="selectdiv">
+                            <label style="margin-right: 50px;">Categoria:</label>
+                            <div class="custom-select" id="categoryDropdown">
+                                <div class="select-selected-category" data-value="normal">Aventura</div>
+                                <div class="select-items select-hide">
+                                <div data-value="adventure">Aventura</div>
+                                <div data-value="fantasy">Fantasia</div>
+                                <div data-value="romance">Romance</div>
+                                <div data-value="thriller">Suspense</div>
+                                <div data-value="horror">Terror</div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="category" id="categoryInput" value="normal" />
+                        </div>
+                        <label>Nome do Livro:</label>
+                        <div>
+                            <input type="text" class="answerfield" id="bookname">
+                        </div>
+                        <h3>Sinopse:</h3>
+                        <p style="font-size: 20px; margin-bottom: 20px;">Resumo conciso e objetivo da obra literária narrativa.</p>
+                        <textarea class="question-sinop" type="text" placeholder="Digite a sinopse do livro" maxlength="355"></textarea>
+                        <br>
+                        <label>Autor:</label><input type="text" class="answerfield" id="author">
+                        <label>Imagem do Livro:</label>
+                        <input type="file" id="imagem" name="imagem" accept="image/*" onchange="previewImagem()">
+                        <div>
+                            <label style="font-size: 30px; font-style: normal;">Pré-visualização:</label><img id="preview" src="#" alt="Imagem selecionada" style="display: none;">
+                        </div>
+                        <div class="submitdiv">
+                            <input type="reset" value="Resetar" class="submitbtn">
+                            <input type="submit" value="Registrar" class="submitbtn">
+                        </div>
+                    </form>
+                </div>
+                <div class="page page5">
+                    <h2>Gerenciar Livros</h2>
+                </div>
             </div>
         </div>
 

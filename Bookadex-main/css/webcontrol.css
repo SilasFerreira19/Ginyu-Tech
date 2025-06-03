@@ -77,8 +77,8 @@ body {
     word-wrap: break-word;
     width: 100%;
     max-width: 800px;
+    font-size: 35px;
 }
-
 
 /* Número da pergunta */
 .qnumb {
@@ -95,7 +95,7 @@ body {
 
 /* Estilo das alternativas */
 .altborder {
-    border: solid 3px white;
+    border: solid 2px white;
     border-radius: 10px;
     margin: 20px 0;
     padding: 15px;
@@ -217,7 +217,7 @@ body {
     box-shadow: 0 0 10px black;
     border-radius: 20px;
     width: 75%;
-    height: 1200px;
+    height: 1150px;
     padding: 20px 50px 20px 50px;
 }
 .question{
@@ -235,10 +235,25 @@ body {
     transition: 0.3s;
     box-shadow: 0 0 5px white;
 }
+.question-sinop{
+    background-color: #00000000;
+    color: white;
+    width: 100%;
+    height: 200px;
+    font-size: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    border-style: none;
+}
+.question-sinop:focus{
+    border: 2px solid #ffffff;
+    transition: 0.3s;
+    box-shadow: 0 0 5px white;
+}
 label{
     font-weight: bold;
 }
-.difficulty{
+.selectdiv{
     display: flex;
     align-items: center;
 }
@@ -263,7 +278,17 @@ label{
     color: white;
     background-color: transparent;
 }
-.select-selected {
+.select-selected-difficulty {
+    background-color: #00000000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    color: white;
+}
+.select-selected-category {
     background-color: #00000000;
     padding: 10px 20px;
     border-radius: 10px;
@@ -345,9 +370,9 @@ label{
     box-shadow: 0 0 5px white;
 }
 .submitbtn{
-    background-color: #00000000;
+    background-color: #1f1f1f;
     color: white;
-    width: 60%;
+    width: 35%;
     height: 50px;
     font-size: 25px;
     border-radius: 10px;
@@ -358,5 +383,11 @@ label{
 }
 .submitdiv{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+}
+#preview{
+    max-width: 300px;
+    max-height: 250px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
