@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link id="configStylesheet" rel="stylesheet" href="css/config.css">
+    <link id="dropdownStylesheet" rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Bookadex - Configurações</title>
+    <link href="img/logo_img.png" rel="icon">
+    <link href="img/logo_img.png" rel="bookadex-icon">
+    <link rel="stylesheet" href="css/preloader.css">
+</head>
+<body>
+    <div class="preloader">
+        <span class="loader"></span>
+    </div>
+    
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo Bookadex">
+            </a>
+            <div class="nav-links">
+                <a href="desafio.html"><p>Desafios</p></a>
+                <a href="categorias.html"><p>Categorias</p></a>
+                <a href="ranking.html"><p>Ranking</p></a>
+                <a href="loja.html"><p>Loja</p></a>
+                <!-- <a href="https://api.whatsapp.com/send/?phone=5511984982869&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0"><p>Contato</p></a> -->
+                <a href="../index.html"><p>GINYU TECH</p></a>
+            </div>
+            <div class="nav-right">
+                <a href="premium.html" class="premium-btn">Torne-se Premium</a>
+                <div class="tokens">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <p>504</p>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <p>100</p>
+                </div>
+                <div class="imgprofile" onclick="toggleDropdown()">
+                    <img src="img/img_perfil/ImgprofileMata.png" alt="">
+                    <div class="profile-dropdown" id="profileDropdown">
+                        <div class="profile-header">
+                            <img src="img/img_perfil/ImgprofileMata.png" alt="Foto de Perfil" class="dropdown-profile-img">
+                            <div>
+                                <p class="profile-username">Mata e Morre</p>
+                                <p class="profile-name">Matheus Filipe Morais Cavalcanti</p>
+                                <p class="profile-points"><span>Pontos:</span> 1001</p>
+                            </div>
+                        </div>
+                        <ul class="profile-options">
+                            <li><a href="meuperfil.html">Meu Perfil</a></li>
+                            <li><a href="personagem.html">Personagem</a></li>
+                            <li><a href="meusquiz.html">Meus quizzes</a></li>
+                            <li><a href="config.html">Configurações</a></li>
+                            <li><a href="#">Sair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>       
+    </header>
+        <main>
+        <div class="config_container">
+            <div class="config_title">
+            <h1>Configurações</h1>
+            </div>
+            <div class="configcont">
+                <div class="configopt">
+                    <div class="cadaopt">
+                        <h2 data-target="account" class="active" role="tab" aria-controls="account" tabindex="0">Minha Conta</h2>   
+                    </div>
+                <div class="cadaopt">
+                        <h2 data-target="accessibility" role="tab" aria-controls="accessibility" tabindex="0">Acessibilidade</h2>
+                </div>
+                    <div class="cadaopt">
+                        <h2 data-target="privacy" role="tab" aria-controls="privacy" tabindex="0">Privacidade</h2>
+                    </div>
+                    <!-- <div class="exitopt">
+                        <img src="" alt="">
+                        <h2>Sair</h2>
+                    </div> -->
+            </div>
+
+            <div class="configswitch">
+                <div class="tab-content myaccount" id="account">
+                    <h3>Detalhes da conta</h3>
+                    <p>Total de Perguntas Respondidas: <span>201</span></p>
+                    <p>Total de Quizzes Finalizados: <span>21</span></p>
+                    <p>Total de Pontos obtidos: <span>10731</span></p>
+                    <p>Total de Polvoedas obtidas: <span>3120</span></p>
+                    <p>Total de Octokens obtidas: <span>605</span></p>
+                    <h4>Inscreveu-se no dia 08 de Junho de 2025</h4>
+                </div>
+
+                <div class="tab-content" id="accessibility" style="display: none;">
+                    <div class="switchop">
+                        <h3>Modo de Escuro:</h3>
+                        <label class="switch">
+                        <input type="checkbox" id="darkModeToggleConfig" checked>
+                        <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="switchop">
+                        <h3>Fonte Aumentada:</h3>
+                        <label class="switch">
+                        <input type="checkbox" id="fontSizeToggle">
+                        <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="switchop">
+                        <h3>Modo Daltônico:</h3>
+                        <label class="switch">
+                        <input type="checkbox" id="daltonicoToggle">
+                        <span class="slider"></span>
+                        </label>
+                    </div>
+                    <!-- <div class="switchop">
+                        <h3>Fonte Aumentada:</h3>
+                        <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                        </label>
+                    </div> -->
+                </div>
+
+                <div class="tab-content privalayout" id="privacy" style="display: none;">
+                    <h3>Introdução</h3>
+                    <p>O Bookadex valoriza a privacidade dos seus usuários e está comprometido em proteger os dados pessoais
+                    coletados durante o uso da plataforma. Esta Política de Privacidade descreve quais informações são coletadas,
+                    como são utilizadas e os direitos dos usuários em relação aos seus dados.</p>
+
+                    <h3>Coleta de Dados</h3>
+                    <p>Durante a utilização do Bookadex, podemos coletar os seguintes dados:</p>
+                    <ul>
+                        <li>• Nome de usuário ou apelido (nickname)</li>
+                        <li>• Endereço de e-mail (se necessário para autenticação ou recuperação de conta)</li>
+                        <li>• Dados de uso (como pontuação, fases jogadas e itens adquiridos)</li>
+                        <li>• Sugestões de perguntas ou comentários enviados voluntariamente pelo usuário</li>
+                        <li>• Dados técnicos do dispositivo (como navegador e tipo de conexão)</li>
+                        <p>Observação: O acesso às fases do jogo e ao tutorial pode ser feito sem autenticação. No entanto, funcionalidades como sugestões, rankings e inventário de itens requerem identificação do usuário.</p>
+                    </ul>
+
+                    <h3>Uso das Informações</h3>
+                    <p>As informações coletadas são utilizadas para:</p>
+                    <ul>
+                        <li>• Gerenciar e personalizar a experiência do usuário na plataforma;</li>
+                        <li>• Permitir autenticação e recuperação de conta;</li>
+                        <li>• Analisar o uso do sistema para melhorias;</li>
+                        <li>• Gerar rankings e estatísticas de desempenho;</li>
+                        <li>• Responder sugestões e comentários enviados pelos usuários.</li>
+                    </ul>
+
+                    <h3>Armazenamento e Segurança</h3>
+                    <p>Os dados são armazenados de forma segura e utilizados apenas enquanto necessários para o funcionamento do sistema. São adotadas medidas
+                    técnicas e administrativas para proteger os dados contra acessos não autorizados, perda ou vazamento.</p>
+                    
+                    <h3>Compartilhamento de Dados</h3>
+                    <p>Os dados dos usuários não são compartilhados com terceiros, exceto:</p>
+                    <ul>
+                        <li>• Em cumprimento a obrigações legais ou ordens judiciais</li>
+                        <li>• Quando necessário para proteção dos direitos e segurança dos usuários ou da plataforma</li>
+                    </ul>
+
+                    <h3>Direitos dos Usuários</h3>
+                    <p>De acordo com a Lei Geral de Proteção de Dados (LGPD), os usuários têm o direito de:</p>
+                    <ul>
+                        <li>• Acessar seus dados pessoais</li>
+                        <li>• Corrigir dados incompletos, inexatos ou desatualizados</li>
+                        <li>• Solicitar a exclusão de seus dados</li>
+                        <li>• Revogar o consentimento, quando aplicável</li>
+                    </ul>
+                    <p>Esses direitos podem ser exercidos mediante solicitação via e-mail ou canal oficial 
+                        da equipe responsável pelo Bookadex.</p>
+
+                    <h3>Alterações na Política</h3>
+                    <p>Esta Política de Privacidade pode ser atualizada a qualquer momento. Recomendamos a leitura periódica.
+                         Em caso de alterações significativas, os usuários serão notificados dentro da plataforma.</p>
+
+                    <h3>Contato</h3>
+                    <p>Para dúvidas, solicitações ou sugestões relacionadas à privacidade e proteção de dados, entre em contato com a equipe responsável pelo Bookadex por meio do e-mail:
+                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=equipe.ginyutech@gmail.com&su=Olá%20Ginyu%20Tech&body=Gostaria%20de%20tirar%20algumas%20duvidas%20sobre%20sua%20plataforma%20Bookadex." target="_blank">equipe.ginyutech@gmail.com</a></p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </main>
+    <script src="js/preloader.js"></script> 
+    <script src="js/config.js"></script> 
+    <script src="js/acessibility.js"></script>
+</body>
