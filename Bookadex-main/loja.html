@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookadex - Loja</title>
+    <link href="img/logo_img.png" rel="icon">
+    <link href="img/logo_img.png" rel="bookadex-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loja.css">
+    <!-- <link rel="stylesheet" href="css/preloader.css"> -->
+    <link rel="stylesheet" href="css/dropdown.css">     
+</head>
+<body>
+    <div class="preloader">
+        <span class="loader"></span>
+    </div>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo Bookadex">
+            </a>
+            <div class="nav-links">
+                <a href="desafio.html"><p>Desafios</p></a>
+                <a href="categorias.html"><p>Categorias</p></a>
+                <a href="ranking.html"><p>Ranking</p></a>
+                <a href="loja.html"><p>Loja</p></a>
+                <!-- <a href="https://api.whatsapp.com/send/?phone=5511984982869&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0"><p>Contato</p></a> -->
+                <a href="../index.html"><p>GINYU TECH</p></a>
+            </div>
+            <div class="nav-right">
+                <a href="premium.html" class="premium-btn">Torne-se Premium</a>
+                <div class="tokens">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <p>504</p>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <p>100</p>
+                </div>
+                <div class="imgprofile" onclick="toggleDropdown()">
+                    <img src="img/img_perfil/imgprofileSilas.png" alt="">
+                    <div class="profile-dropdown" id="profileDropdown">
+                        <div class="profile-header">
+                            <img src="img/img_perfil/imgprofileSilas.png" alt="Foto de Perfil" class="dropdown-profile-img">
+                            <div>
+                                <p class="profile-username">Silão da Massa</p>
+                                <p class="profile-name">Silas Ferreira de Moura</p>
+                                <p class="profile-points"><span>Pontos:</span> 1045</p>
+                            </div>
+                        </div>
+                        <ul class="profile-options">
+                            <li><a href="meuperfil.html">Meu Perfil</a></li>
+                            <li><a href="personagem.html">Personagem</a></li>
+                            <li><a href="meusquiz.html">Meus quizzes</a></li>
+                            <li><a href="config.html">Configurações</a></li>
+                            <li><a href="#">Sair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>       
+    </header>
+
+    <main>
+        <div class="aba_loja">
+            <div class="titlestore">
+                <h1>loja</h1>
+            </div>
+         <div class="substore" id="main-items">
+    <div class="item_box" onclick="abrirSubAba('roupas')">
+        <h2>Roupas</h2>
+        <img src="img/img_loja/rolpa.png" alt="">
+    </div>
+    <div class="item_box" onclick="abrirSubAba('acessorios')">
+        <h2>Acessórios</h2>
+        <img src="img/img_loja/oculo.png" alt="">
+    </div>
+    <div class="item_box" onclick="abrirSubAba('octoken')">
+        <h2>Octoken</h2>
+        <img class="octoki" src="img/img_loja/octoki2.png" alt="">
+    </div>
+    <div class="item_box" onclick="abrirSubAba('item')">
+        <h2>Item</h2>
+        <img src="img/img_loja/libro.png" alt="">
+    </div>
+</div>
+
+<!-- Sub-aba de roupas -->
+<div class="sub_aba" id="aba_roupas">
+    <button class="btn-voltar">← Voltar</button>
+    <h2>Bem-vindo a loja do Octávio - Roupas</h2>
+    <div class="scroll-itens">
+        <div class="item_loja">
+            <img class="shirt" src="img/img_loja/roupas_loja/rs1.png" alt="">
+            <div class="pec_info">
+                <h1>Camiseta Árvore da Sabedoria</h1>
+                <div class="tokenstore">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <h2>100</h2>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <h2>5</h2>
+                </div>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="item_loja">
+            <img class="shirt" src="img/img_loja/roupas_loja/rs2.png" alt="">
+            <div class="pec_info">
+                <h1>Camiseta Book Nerd</h1>
+                <div class="tokenstore">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <h2>120</h2>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <h2>6</h2>
+                </div>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="item_loja">
+            <img class="shirt" src="img/img_loja/roupas_loja/rs3.png" alt="">
+            <div class="pec_info">
+                <h1>Camiseta Hogwarts</h1>
+                <div class="tokenstore">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <h2>200</h2>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <h2>10</h2>
+                </div>
+                <button>Comprar</button>
+            </div>
+        </div>
+         <div class="item_loja">
+            <img class="shirt" src="img/img_loja/roupas_loja/rs4.png" alt="">
+            <div class="pec_info">
+                 <h1>Camiseta Amo ler</h1>
+                <div class="tokenstore">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <h2>150</h2>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <h2>8</h2>
+                </div>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="item_loja">
+            <img class="shirt" src="img/img_loja/roupas_loja/rs5.png" alt="">
+            <div class="pec_info">
+                 <h1>Camiseta Tenha Determinação</h1>
+                <div class="tokenstore">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <h2>220</h2>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <h2>16</h2>
+                </div>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="item_loja">
+            <img class="shirt" src="img/img_loja/roupas_loja/rs6.png" alt="">
+            <div class="pec_info">
+                <h1>Camiseta Ginyu Tech</h1>
+                <div class="tokenstore">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <h2>250</h2>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <h2>15</h2>
+                </div>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <!-- Adicione mais peças aqui -->
+    </div>
+</div>
+
+<!-- Sub-aba de Acessórios -->
+<div class="sub_aba" id="aba_acess">
+    <button class="btn-voltar">← Voltar</button>
+    <h2>Bem-vindo a loja do Octávio - Acessórios</h2>
+    <div class="scroll-itens">
+        <div class="item_octoken">
+            <img src="img/img_loja/acess_loja/Faixalele.png" alt="">
+            <div class="pec_info">
+                  <h1>Faixa Leandro PHP</h1>
+                <div class="tokenstore">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <h2>20</h2>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <h2>1</h2>
+                </div>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="item_octoken">
+            <img src="img/img_loja/acess_loja/SilasGlasses.png" alt="">
+            <div class="pec_info">
+                  <h1>Óculos Harry Potter</h1>
+                <div class="tokenstore">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <h2>250</h2>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <h2>15</h2>
+                </div>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="item_octoken">
+            <img src="img/img_loja/acess_loja/cachecoldosou.png" alt="">
+            <div class="pec_info">
+                  <h1>Cachecol Vermelho</h1>
+                <div class="tokenstore">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <h2>200</h2>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <h2>10</h2>
+                </div>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="item_octoken">
+            <img src="img/img_loja/acess_loja/fonegatinho.png" alt="">
+            <div class="pec_info">
+                  <h1>Fone Miau Miau</h1>
+                <div class="tokenstore">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <h2>150</h2>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <h2>8</h2>
+                </div>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="item_octoken">
+            <img src="img/img_loja/acess_loja/hollowmask.png" alt="">
+            <div class="pec_info">
+                  <h1>Máscara Hollow</h1>
+                <div class="tokenstore">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <h2>250</h2>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <h2>15</h2>
+                </div>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="item_octoken">
+            <img src="img/img_loja/acess_loja/tocapika.png" alt="">
+            <div class="pec_info">
+                  <h1>Touca Pika</h1>
+                <div class="tokenstore">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <h2>300</h2>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <h2>20</h2>
+                </div>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <!-- Adicione mais peças aqui -->
+    </div>
+</div>
+
+<!-- Sub-aba de Octoken-->
+<div class="sub_aba" id="aba_octoken">
+    <button class="btn-voltar">← Voltar</button>
+    <h2>Bem-vindo a loja do Octávio - Octoken</h2>
+    <div class="scroll-itens">
+        <div class="item_octoken">
+            <img src="img/img_loja/octoken.png" alt="">
+            <div class="mon_info">
+                  <h1>Um Punhado de Octokens</h1>
+                    <h2>20</h2>
+                    <h3>R$ 9,99</h3>
+                <button>Comprar</button>
+            </div>
+        </div>
+       <div class="item_octoken">
+            <img src="img/img_loja/octoken_loja/carteira.png" alt="">
+            <div class="mon_info">
+                  <h1>Uma Carteira de Octokens</h1>
+                    <h2>50</h2>
+                    <h3>R$ 24,99</h3>
+                <button>Comprar</button>
+            </div>
+        </div>
+       <div class="item_octoken">
+            <img src="img/img_loja/octoken_loja/carrinho.png" alt="">
+            <div class="mon_info">
+                  <h1>Um Carrinho de Octokens</h1>
+                    <h2>100</h2>
+                    <h3>R$ 49,99</h3>
+                <button>Comprar</button>
+            </div>
+        </div>
+                <div class="item_octoken">
+            <img src="img/img_loja/octoken_loja/cofre.png" alt="">
+            <div class="mon_info">
+                  <h1>Um Cofre Cheio de Octokens</h1>
+                    <h2>500</h2>
+                    <h3>R$ 149,99</h3>
+                <button>Comprar</button>
+            </div>
+        </div>
+       <div class="item_octoken">
+            <img src="img/img_loja/octoken_loja/montanha.png" alt="">
+            <div class="mon_info">
+                  <h1>Uma Montanha de Octokens</h1>
+                    <h2>1000</h2>
+                    <h3>R$ 299,99</h3>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <!-- Adicione mais peças aqui -->
+    </div>
+</div>
+
+<!-- Sub-aba de itens -->
+<div class="sub_aba" id="aba_item">
+    <button class="btn-voltar">← Voltar</button>
+    <h2>Bem-vindo a loja do Octávio - Item</h2>
+    <div class="scroll-itens">
+        <div title="Este item dobra seus pontos por um tempo limitado!" class="item_octoken">
+            <img src="img/img_loja/item_loja/2xpontos.png" alt="">
+            <div class="pec_info">
+                  <h1>Multiplicador de pontos 2x - 1x</h1>
+                <div class="tokenstore">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <h2>70</h2>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <h2>6</h2>
+                </div>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div title="Este item aumenta o tempo maximo para responder as perguntas!" class="item_octoken">
+            <img src="img/img_loja/item_loja/esticatempo.png" alt="">
+            <div class="pec_info">
+                 <h1 class="">Estica Tempo - 1x</h1>
+                <div class="tokenstore">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <h2>30</h2>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <h2>2</h2>
+                </div>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div title="Este item elimina duas alternativas incorretas da pergunta!" class="item_octoken">
+            <img src="img/img_loja/item_loja/tiraalt.png" alt="">
+            <div class="pec_info">
+                <h1>Elimina alternativa - x1</h1>
+                <div class="tokenstore">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <h2>50</h2>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <h2>3</h2>
+                </div>
+                <button>Comprar</button>
+            </div>
+        </div>
+         <!-- <div class="item_loja">
+            <img src="img/img_loja/roupas_loja/roupastore.png" alt="">
+            <div class="pec_info">
+                  <h1>Terno Social</h1>
+                <div class="tokenstore">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <h2>150</h2>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <h2>8</h2>
+                </div>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="item_loja">
+            <img src="img/img_loja/roupas_loja/roupastore2.png" alt="">
+            <div class="pec_info">
+                 <h1>Camiseta Polo</h1>
+                <div class="tokenstore">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <h2>50</h2>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <h2>2</h2>
+                </div>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="item_loja">
+            <img src="img/img_loja/roupas_loja/roupastore3.png" alt="">
+            <div class="pec_info">
+                <h1>Moletom Ginyu Tech</h1>
+                <div class="tokenstore">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <h2>250</h2>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <h2>15</h2>
+                </div>
+                <button>Comprar</button>
+            </div>
+        </div> -->
+        <!-- Adicione mais peças aqui -->
+    </div>
+</div>
+
+
+<!-- Outras sub-abas podem ser adicionadas seguindo esse mesmo padrão -->
+
+        </div>
+        <div class="personagem">
+            <img src="img/img_loja/sailas.png" alt="">
+        </div>
+        <!-- Modal de Compra -->
+        <div id="modalCompra" class="modal-compra">
+            <div class="modal-conteudo">
+                <span class="fechar" id="fecharModal">&times;</span>
+                <div class="modal-imagem">
+                    <img id="modalImagem" src="" alt="Item Selecionado" />
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalNome">Nome do Item</h2>
+
+                <div class="botoes-compra">
+                    <div class="botao-container">
+                    <p class="comprar-label">Comprar com Polvoeda:</p>
+                    <button class="comprar-polvoeda">
+                        <img class="povoleda" src="img/img_loja/polvoeda.png" alt="" />
+                        <span id="valorPolvoeda">--</span>
+                    </button>
+                    </div>
+                    <div class="botao-container">
+                    <p class="comprar-label">Comprar com Octoken:</p>
+                    <button class="comprar-octoken">
+                        <img src="img/img_loja/octoken.png" alt="" />
+                        <span id="valorOctoken">--</span>
+                    </button>
+                    </div>
+                </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Modal exclusivo de Octoken -->
+        <div id="modalOctoken" class="modal-compra">
+            <div class="modal-conteudo">
+                <span class="fechar" id="fecharModalOctoken">&times;</span>
+                <div class="modal-imagem">
+                    <img id="modalImagemOctoken" src="" alt="Pacote Octoken" />
+                </div>
+                <div class="modal-info">
+                        <h2 id="modalNomeOctoken">Nome do Pacote</h2>
+                        <h3 id="modalQtdOctoken">Quantidade: -- Octokens</h3>
+                    <button class="comprar-reais">
+                        <span id="precoReais">R$ --</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </main>
+    
+</body>
+
+
+<script src="js/loja.js"></script>
+<script src="js/preloader.js"></script>   
+</html>
