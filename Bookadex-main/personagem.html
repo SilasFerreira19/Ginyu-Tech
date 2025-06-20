@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookadex - Loja</title>
+    <link href="img/logo_img.png" rel="icon">
+    <link href="img/logo_img.png" rel="bookadex-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/personagem.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/dropdown.css">     
+</head>
+<body>
+    <div class="preloader">
+        <span class="loader"></span>
+    </div>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo Bookadex">
+            </a>
+            <div class="nav-links">
+                <a href="desafio.html"><p>Desafios</p></a>
+                <a href="categorias.html"><p>Categorias</p></a>
+                <a href="ranking.html"><p>Ranking</p></a>
+                <a href="loja.html"><p>Loja</p></a>
+                <!-- <a href="https://api.whatsapp.com/send/?phone=5511984982869&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0"><p>Contato</p></a> -->
+                <a href="../index.html"><p>GINYU TECH</p></a>
+            </div>
+            <div class="nav-right">
+                <a href="premium.html" class="premium-btn">Torne-se Premium</a>
+                <div class="tokens">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <p>504</p>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <p>100</p>
+                </div>
+                <div class="imgprofile" onclick="toggleDropdown()">
+                    <img src="img/img_perfil/imgprofileNay.png" alt="">
+                    <div class="profile-dropdown" id="profileDropdown">
+                        <div class="profile-header">
+                            <img src="img/img_perfil/imgprofileNay.png" alt="Foto de Perfil" class="dropdown-profile-img">
+                            <div>
+                                <p class="profile-username">Nay Nay</p>
+                                <p class="profile-name">Nayara Bastos Porto</p>
+                                <p class="profile-points"><span>Pontos:</span> 831</p>
+                            </div>
+                        </div>
+                        <ul class="profile-options">
+                            <li><a href="meuperfil.html">Meu Perfil</a></li>
+                            <li><a href="personagem.html">Personagem</a></li>
+                            <li><a href="meusquiz.html">Meus quizzes</a></li>
+                            <li><a href="config.html">Configurações</a></li>
+                            <li><a href="#">Sair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>       
+    </header>
+
+    <main>
+        <div class="aba_personagem">
+            <div class="titlechar">
+                <h1>Personagem</h1>
+            </div>
+            <div class="customcont">
+                <div class="customopt" data-type="gender">
+                    <img src="img/img_persona/gender.png" alt="">
+                </div>
+                <div class="customopt" data-type="skin">
+                    <img src="img/img_persona/skin.png" alt="">
+                </div>
+                <div class="customopt" data-type="face">
+                    <img src="img/img_persona/face.png" alt="">
+                </div>
+                <div class="customopt" data-type="hair">
+                    <img src="img/img_persona/hair.png" alt="">
+                </div>
+                <div class="customopt" data-type="clothing">
+                    <img src="img/img_persona/cloti.png" alt="">
+                </div>
+            </div>
+            <div class="abachar" data-content="gender">
+                <h2>Gênero</h2>
+                <div class="scroll-itens">
+                    <div class="item_personagem">
+                        <img class="shirt" src="img/img_persona/gender/malegender.png" alt="">
+                        <div class="pec_info">
+                            <h1>Masculino</h1>
+                        </div>
+                    </div>
+                    <div class="item_personagem">
+                        <img class="shirt" src="img/img_persona/gender/femalegender.png" alt="">
+                        <div class="pec_info">
+                            <h1>Feminino</h1>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="abachar" data-content="skin" style="display: none;">
+                <h2>Pele</h2>
+                <div class="scroll-itens">
+                    <div class="item_personagem">
+                        <img class="shirt" src="img/img_persona/skin/cor_1.png" alt="">
+                    </div>
+                    <div class="item_personagem">
+                        <img class="shirt" src="img/img_persona/skin/cor_2.png" alt="">
+                    </div>
+                    <div class="item_personagem">
+                        <img class="shirt" src="img/img_persona/skin/cor_3.png" alt="">
+                    </div>
+                
+                </div>
+                
+                </div>
+
+            <div class="abachar" data-content="face" style="display: none;">
+                <h2>Rosto</h2>
+                <div class="scroll-itens">
+                    <div class="item_personagemalt">
+                        <img src="img/img_persona/eye/olho_1.png" alt="">
+                    </div>
+                    <div class="item_personagemalt">
+                        <img src="img/img_persona/eye/olho_2.png" alt="">
+                    </div>
+                    <div class="item_personagemalt">
+                        <img src="img/img_persona/eye/olho_3.png" alt="">
+                    </div>
+
+                    <div class="item_personagemalt">
+                        <img src="img/img_persona/nose/nariz_1.png" alt="">
+                    </div>
+                    <div class="item_personagemalt">
+                        <img src="img/img_persona/nose/nariz_2.png" alt="">
+                    </div>
+                    <div class="item_personagemalt">
+                        <img src="img/img_persona/nose/nariz_3.png" alt="">
+                    </div>
+
+
+                    <div class="item_personagemalt">
+                        <img src="img/img_persona/mouth/boca_1.png" alt="">
+                    </div>
+                    <div class="item_personagemalt">
+                        <img src="img/img_persona/mouth/boca_2.png" alt="">
+                    </div>
+                    <div class="item_personagemalt">
+                        <img src="img/img_persona/mouth/boca_3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="abachar" data-content="hair" style="display: none;">
+                <h2>Cabelo</h2>
+                <div class="scroll-itens">
+                    <div class="item_personagemalt">
+                        <img src="img/img_persona/hair/cabelo_1.png" alt="">
+                    </div>
+                    <div class="item_personagemalt">
+                        <img src="img/img_persona/hair/cabelo_2.png" alt="">
+                    </div>
+                    <div class="item_personagemalt">
+                        <img src="img/img_persona/hair/cabelo_3.png" alt="">
+                    </div>
+                
+                </div>
+            </div>
+            <div class="abachar"data-content="clothing" style="display: none;">
+                <h2>Roupas e acessórios</h2>
+                <div class="scroll-itens">
+                   <div class="item_personagemalt">
+                        <img class="clotichar" src="img/img_loja/roupas_loja/rs5.png" alt="">
+                    </div>
+                    <div class="item_personagemalt">
+                        <img class="clotichar" src="img/img_loja/roupas_loja/rs6.png" alt="">
+                    </div>
+                    <div class="item_personagemalt">
+                        <img class="clotichar" src="img/img_loja/roupas_loja/rs2.png" alt="">
+                    </div>
+                    <div class="item_personagemalt">
+                        <img class="clotichar" src="img/img_loja/acess_loja/fonegatinho.png" alt="">
+                    </div>
+                    <div class="item_personagemalt">
+                        <img class="clotichar" src="img/img_loja/acess_loja/sanes.png" alt="">
+                    </div>
+                    <div class="item_personagemalt">
+                        <img class="clotichar" src="img/img_loja/acess_loja/Faixalele.png" alt="">
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+            
+        </div>
+
+
+
+<!-- Sub-aba de roupas -->
+
+
+<!-- Outras sub-abas podem ser adicionadas seguindo esse mesmo padrão -->
+
+        </div>
+        <div class="personagem">
+            <img src="img/img_persona/gender/femalegender.png" alt="">
+        </div>
+    </main>
+</body>
+
+
+<!-- <script src="js/loja.js"></script> -->
+<script src="js/preloader.js"></script>   
+<script src="js/char.js"></script>
+</html>
