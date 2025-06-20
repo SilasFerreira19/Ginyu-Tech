@@ -1,0 +1,156 @@
+.premium_container {
+    height: auto; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px; 
+}
+
+
+.premium_title{
+    font-weight: bold;
+    font-size: 20px;
+    color: #00c285;
+    margin: 130px 0 45px 0;
+}
+
+.premiumtable{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.basicprize{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: auto;
+    border-radius: 15px;
+    background-color: #02b980;
+    padding-bottom: 55px;
+    box-shadow: 0 0 20px #00c285;
+}
+
+.basicprize h1{
+    margin-top: 25px;
+    color: #ecf3f4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* -webkit-text-stroke: 1px #242424; */
+    font-size: 28px;
+}
+
+.basicprize h2{
+    margin: 25px 0 0 20px;
+    color: #ecf3f4;
+    font-size: 21px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* -webkit-text-stroke: 1px #242424;  */
+     text-align: start;
+}
+
+.basicprize button{
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #646363;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.basicprize button h3{
+    color: #838383;
+    font-size: 18px;
+}
+
+
+.premiumprize {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: auto;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #3a0002, #800006, #ce0610);
+    padding-bottom: 55px;
+    position: relative;
+    border: 3px solid #f2ae1d;
+    box-shadow: 0 0 20px #f2ae1d, 0 0 40px #f2ae1d inset;
+    animation: shine 3s infinite alternate;
+}
+
+@keyframes shine {
+    0% {
+        box-shadow: 0 0 10px #f2ae1d, 0 0 20px #f2ae1d inset;
+    }
+    100% {
+        box-shadow: 0 0 25px #f2ae1d, 0 0 45px #f2ae1d inset;
+    }
+}
+
+/* .premiumprize h1 {
+    margin-top: 25px;
+    color: #f2ae1d;
+    -webkit-text-stroke: 1px #ffe6b0;
+    text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.6);
+    font-size: 28px;
+    font-weight: bold;
+} */
+
+.btnadd {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.premiumprize button {
+    border: solid 2px #f8c75d;
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+    background-image: linear-gradient(90deg, #f2ae1d, #cb9219, #ad7b0e);
+    transition: 0.5s;
+    box-shadow: 0 0 10px #f8c75d;
+}
+
+.premiumprize button h3 {
+    color: rgb(30, 20, 5);
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #fff1a8;
+}
+
+.premiumprize button:hover {
+    background-image: linear-gradient(90deg, #f8c75d, #efae23, #e49e07);
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 0 15px #f8c75d, 0 0 25px #f8c75d inset;
+}
+
+
+.premiumprize h1{
+    font-size: 28px;
+    margin-top: 25px;
+    color: #f2ae1d;
+    -webkit-text-stroke: 1px #ffe6b0; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.premiumprize h2{
+    font-size: 21px;
+    margin: 25px 0 0 20px;
+    color: #f2ae1d;
+    -webkit-text-stroke: 1px #ffe6b0; 
+    text-align: start;
+}
+
+.polvopremium-img {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 120px; /* ajuste conforme necessário */
+    height: auto;
+    border-radius: 50%; /* se quiser imagem redonda */
+    box-shadow: 0 0 10px #00000070;
+}
