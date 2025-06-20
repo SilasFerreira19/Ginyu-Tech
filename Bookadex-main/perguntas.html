@@ -13,6 +13,7 @@
     <link href="img/logo_img.png" rel="icon">
     <link href="img/logo_img.png" rel="bookadex-icon">
     <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/dropdown.css">     
 </head>
 <body>
     <div class="preloader">
@@ -25,16 +26,40 @@
                 <img src="img/logo.png" alt="Logo Bookadex">
             </a>
             <div class="nav-links">
-                <a href="perguntas.html"><p>Perguntas</p></a>
+                <a href="desafio.html"><p>Desafios</p></a>
                 <a href="categorias.html"><p>Categorias</p></a>
-                <a href="#"><p>Ranking</p></a>
-                <a href="#"><p>Loja</p></a>
+                <a href="ranking.html"><p>Ranking</p></a>
+                <a href="loja.html"><p>Loja</p></a>
                 <!-- <a href="https://api.whatsapp.com/send/?phone=5511984982869&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0"><p>Contato</p></a> -->
                 <a href="../index.html"><p>GINYU TECH</p></a>
             </div>
             <div class="nav-right">
-                <div class="imgprofile">
-                    <img src="img/avali2.png" alt="">
+                <a href="premium.html" class="premium-btn">Torne-se Premium</a>
+                <div class="tokens">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <p>504</p>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <p>100</p>
+                </div>
+                <div class="imgprofile" onclick="toggleDropdown()">
+                    <img src="img/img_perfil/ImgprofileLeo.png" alt="">
+                    <div class="profile-dropdown" id="profileDropdown">
+                        <div class="profile-header">
+                            <img src="img/img_perfil/ImgprofileLeo.png" alt="Foto de Perfil" class="dropdown-profile-img">
+                            <div>
+                                <p class="profile-username">Chris Brown</p>
+                                <p class="profile-name">Leonardo Lima de Jesus</p>
+                                <p class="profile-points"><span>Pontos:</span> 777</p>
+                            </div>
+                        </div>
+                        <ul class="profile-options">
+                            <li><a href="meuperfil.html">Meu Perfil</a></li>
+                            <li><a href="personagem.html">Personagem</a></li>
+                            <li><a href="meusquiz.html">Meus quizzes</a></li>
+                            <li><a href="config.html">Configurações</a></li>
+                            <li><a href="#">Sair</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>       
@@ -51,7 +76,7 @@
                 </div>
                 <div class="quizalt">
                     <h1 class="altborder" data-correct="true">A) A flor</h1>
-                    <h1 class="altborder">B) O elefante em formato de chápeu</h1>
+                    <h1 class="altborder">B) O chapéu de aviador</h1>
                     <h1 class="altborder">C) A estrela</h1>
                     <h1 class="altborder">D) O livro de história</h1>
                 </div>
@@ -89,6 +114,14 @@
                     <h2>Responder</h2>
                 </div>
             </div>
+            <div class="octopart">
+                <img src="img/img_pergunta/normal.png" alt="Polvo">
+            </div>
+            <div id="resultadoFinal">
+                <h2>Quiz Finalizado, Parabéns!</h2>
+                <p class="pontuacao"></p>
+                <button id="btnRetry" class="btnRetry">Tentar Novamente</button>
+            </div>
         </div>
     </main>
     <footer>
@@ -119,7 +152,8 @@
                 <p>BOOKADEX</p>
             </div>
         </div>
-    </footer>    
+    </footer>
+    <script src="js/config.js"></script>
     <script src="js/preloader.js"></script>    
     <script src="js/quiz.js"></script>
 </body>

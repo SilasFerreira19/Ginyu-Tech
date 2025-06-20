@@ -9,6 +9,7 @@
     <link href="img/logo_img.png" rel="icon">
     <link href="img/logo_img.png" rel="bookadex-icon">
     <link rel="stylesheet" href="css/preloader.css">
+     <link rel="stylesheet" href="css/dropdown.css">     
 </head>
 <body>
     <div class="preloader">
@@ -21,17 +22,43 @@
                 <img src="img/logo.png" alt="Logo Bookadex">
             </a>
             <div class="nav-links">
-                <a href="perguntas.html"><p>Perguntas</p></a>
+                <a href="desafio.html"><p>Desafios</p></a>
                 <a href="categorias.html"><p>Categorias</p></a>
-                <a href="#"><p>Ranking</p></a>
-                <a href="#"><p>Loja</p></a>
+                <a href="ranking.html"><p>Ranking</p></a>
+                <a href="loja.html"><p>Loja</p></a>
                 <!-- <a href="https://api.whatsapp.com/send/?phone=5511984982869&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0"><p>Contato</p></a> -->
                 <a href="../index.html"><p>GINYU TECH</p></a>
             </div>
             <div class="nav-right">
-                <a href="#" class="premium-btn">Torne-se Premium</a>
+                <a href="premium.html" class="premium-btn">Torne-se Premium</a>
                 <a href="cadastro.html" class="cadastro">Cadastro</a>
                 <a href="login.html" class="login">Login</a>
+                <!-- <div class="tokens">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <p>504</p>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <p>100</p>
+                </div>
+                <div class="imgprofile" onclick="toggleDropdown()">
+                    <img src="img/img_perfil/imgprofileLevi.png" alt="">
+                    <div class="profile-dropdown" id="profileDropdown">
+                        <div class="profile-header">
+                            <img src="img/img_perfil/imgprofileLevi.png" alt="Foto de Perfil" class="dropdown-profile-img">
+                            <div>
+                                <p class="profile-username">Nicola Tesla</p>
+                                <p class="profile-name">Levi Nicola Santos</p>
+                                <p class="profile-points"><span>Pontos:</span> 750</p>
+                            </div>
+                        </div>
+                        <ul class="profile-options">
+                            <li><a href="meuperfil.html">Meu Perfil</a></li>
+                            <li><a href="personagem.html">Personagem</a></li>
+                            <li><a href="meusquiz.html">Meus quizzes</a></li>
+                            <li><a href="config.html">Configurações</a></li>
+                            <li><a href="#">Sair</a></li>
+                        </ul>
+                    </div>
+                </div> -->
             </div>
         </nav>       
     </header>
@@ -42,8 +69,8 @@
     
             <section class="buttons">
                 <a href="categorias.html"><button class="btn-red">Categorias</button></a>
-                <button class="btn-red">Meus Quizzes</button>
-                <button class="btn-red">Personagem</button>
+                <a href="meusquiz.html"><button class="btn-red">Meus Quizzes</button></a>
+                <a href="personagem.html"><button class="btn-red">Personagem</button></a>
             </section>
     
             <section class="search-bar">
@@ -112,8 +139,8 @@
                         <p>A cada quiz, acumule pontos para liberar novas opções de personalização exclusivas.</p>
                     </div>
                     <div class="buttons">
-                        <a href="#" class="btn primary">Criar Personagem</a>
-                        <a href="#" class="btn secondary">Loja</a>
+                        <a href="personagem.html" class="btn primary">Criar Personagem</a>
+                        <a href="loja.html" class="btn secondary">Loja</a>
                     </div>
                 </div>
                 <div class="character-image">
@@ -129,7 +156,7 @@
                         <div class="ranking-description">
                             <h3>Ranking</h3>
                             <p>No ranking do nosso quiz literário, você compete com outros leitores e ganha pontos a cada acerto. Suba de posição e prove que é um verdadeiro expert em livros!</p>
-                            <a href="#" class="btn ranking">Acessar o Ranking</a>
+                            <a href="ranking.html" class="btn ranking">Acessar o Ranking</a>
                         </div>
             
                         <!-- Centro - Medalha -->
@@ -141,7 +168,7 @@
                         <div class="challenges-description">
                             <h3>Desafios</h3>
                             <p>Nos desafios do quiz literário, você testa seus conhecimentos sobre livros e personagens. Complete as missões e conquiste recompensas exclusivas enquanto avança no jogo!</p>
-                            <a href="#" class="btn ranking">Acessar os Desafios</a>
+                            <a href="desafio.html" class="btn ranking">Acessar os Desafios</a>
                         </div>
                     </div>
                 </div>
