@@ -1,257 +1,418 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Bookadex - Página Inicial</title>
-    <link href="img/logo_img.png" rel="icon">
-    <link href="img/logo_img.png" rel="bookadex-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/clayborn" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/recurso-sans" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/bebusneuebold-news" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/ginyu.css">
     <link rel="stylesheet" href="css/preloader.css">
-     <link rel="stylesheet" href="css/dropdown.css">     
+    <link href="img/logoGinyuTech2.png" rel="icon">
+    <link href="img/logoGinyuTech2.png" rel="ginyutech-icon">
+    <title>Ginyu Tech</title>
 </head>
 <body>
-    <div class="preloader">
-        <span class="loader"></span>
+<!-- <div class="container"> -->
+  <div class="preloader">
+    <!-- Conteúdo do preloader, como uma animação de carregamento ou mensagem -->
+      <div class="loader">
+          <img src="img/ginyuloader.gif" alt="Carregando...">
+      </div>
+  </div>
+
+          <header>
+            <div class="logo" id="logo">
+                <img src="img/logoGinyuTech2.png" alt="">
+                <p>GINYU TECH</p>
+            </div>
+
+            <div class="menu-icon" onclick="toggleMenu()">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          
+            
+            <nav class="opcoes" id="opcoes">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projeto">Projetos</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#merch">Merch</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div class="arrowcontainer">
+          <div class="arrow">
+            <a href="#"><img src="img/seta1.png" alt=""></a>
+          </div>
+        </div>
+
+        <div class="slides-container">
+          <div class="slides">
+              <div class="slide">
+                  <img src="img/slides/slide4.jpg" alt="Slide 1">
+                  <div class="textbtncontainer">
+                      <div class="text-overlay">
+                          <p class="text-overlay1 fade-down">Bem-vindo a GINYU <span class="spanda">TECH</span></p>
+                          <p class="text-overlay2 fade-up">Descubra uma nova maneira de ler com a ajuda da Ginyu Tech.</p>
+                      </div>
+                      <a href="#sobre" class="btnabout fade-up">Saiba mais</a>
+                  </div>
+              </div>
+              <div class="slide">
+                  <img src="img/slides/slide2.jpg" alt="Slide 2">
+                  <div class="textbtncontainer">
+                      <div class="text-overlay txtup">
+                          <p class="text-overlay1 fade-down">O poder da <span class="spanda">leitura na era digital</span></p>
+                          <p class="text-overlay2 fade-up">Levando a tecnologia ao mundo dos livros e inspirando novos leitores.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="slide">
+                  <img src="img/slides/slide6-2.jpg" alt="Slide 3">
+                  <div class="textbtncontainer">
+                      <div class="text-overlay">
+                          <p class="text-overlay1 fade-down">Conheça o <span class="bookadex">BOOKADEX</span></p>
+                          <p class="text-overlay2 fade-up">Nosso principal projeto para estimular a leitura através de desafios e recompensas.</p>
+                      </div>
+                      <a href="#projeto" class="btnbook fade-up">Saiba mais</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+          <div class="dotsContainer">
+              <div class="dot active" onclick="showSlide(0)"></div>
+              <div class="dot" onclick="showSlide(1)"></div>
+              <div class="dot" onclick="showSlide(2)"></div>
+          </div>
+          <div class="prev" onclick="prevSlide()">&#10094;</div>
+          <div class="next" onclick="nextSlide()">&#10095;</div>
+      </div>
+
+        <div class="titleindex fade-down" id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Quem somos?</p>
+        </div>
+        <div class="sobrenos">
+                <div class="textabout">
+                    <h3 class="fade-up">A Ginyu Tech é uma startup inovadora focada no desenvolvimento de soluções tecnológicas para promover a leitura e a educação de forma criativa e acessível. Fundada por um grupo de entusiastas da tecnologia e da literatura, a empresa tem como missão utilizar a tecnologia para incentivar o hábito da leitura e promover o conhecimento. A equipe da Ginyu Tech é composta por pessoas altamente qualificadas e apaixonadas pelo que fazem, unindo conhecimentos nas áreas de tecnologia da informação, design, pedagogia e literatura. Essa diversidade de habilidades</h3>
+                </div>
+                <div class="textabout">
+                    <h3 class="fade-up">Permite à empresa criar soluções inovadoras e impactantes, como o projeto “Bookadex”. Com uma abordagem centrada no usuário, a Ginyu Tech busca constantemente entender as necessidades e preferências dos leitores, garantindo que suas soluções atendam às demandas do mercado de forma eficaz e envolvente. A empresa está comprometida em criar um impacto positivo na sociedade, promovendo a leitura e a educação como ferramentas essenciais para o desenvolvimento humano.</h3>
+                </div>
+                <div class="textabout fade-up">
+                    <img src="img/logoGinyuTechUpdate.jpg" alt="">
+                    <h4>Logo Ginyu Tech</h4>
+                </div>
+        </div>
+
+        <div class="faixaroxabemdaorapraseparar">
+          <div class="epigrafe">
+              <p class="fade-up">"Livros são os mais silenciosos e constantes amigos; os mais acessíveis e sábios conselheiros; e os mais pacientes professores."</p>
+              <h1 class="fade-up">-ELIOT, CHARLES</h1>
+          </div>  
+        </div>
+
+            <div class="missionvalue">
+                <div class="vision">
+                    <img class="zoom-in" src="img/missao.jpg" alt="">
+                    <h2 class="fade-up">Missão</h2>
+                    <h3 class="fade-up">A missão da Ginyu Tech é desenvolver um sistema para aqueles que tem uma paixão pela leitura e buscam integrar-se nessa área do conhecimento literário, visando expandir o conhecimento, por meio de processos lúdicos</h3>
+                </div>
+                <div class="vision">
+                    <img class="zoom-in" src="img/visao3.jpeg" alt="">
+                    <h2 class="fade-up">Visão</h2>
+                    <h3 class="fade-up">Visamos expandir nosso sistema para as instituições de ensino, auxiliando em sala de aula.</h3>
+                </div>
+                <div class="vision">
+                    <img class="zoom-in" src="img/valores.jpg" alt="">
+                    <h2 class="fade-up">Valores</h2>
+                    <h3 class="fade-up">Esperamos trazer a humanidade, diversidade, integridade, aprendizado, persistência, transparência, junto aos nossos colaboradores, clientes e parceiros. </h3>
+                </div>
+            </div>
+
+            
+    <div class="back">
+      <div class="rasgo">
+        <img src="img/rasgo1.png" alt="">
+      </div>
+        <div class="titleindex fade-down" id="projeto">
+            <h2>Projeto</h2>
+            <p>Nosso Projeto</p>
+        </div>
+
+            <div class="projects">
+                
+                    <div class="bookdex">
+                        <h2 class="fade-up">BOOKADEX</h2>
+                        <a href="Bookadex-main/index.html" class="btnbookadex fade-up">
+                          <!-- <a href="https://www.figma.com/proto/xj6q4UfWyzve6tXjqFwe8f/Bookadex?node-id=1-902&node-type=frame&t=SiD7oQRUSPHxvMW0-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A902" class="btnbookadex fade-up"> -->
+                          <h3 class="fade-up">VENHA CONFERIR</h3>
+                          <span class="iconbook fade-up"><i class="fas fa-book-open"></i></span>
+                        </a>                          
+                        <h4 class="fade-up">O Bookadex é uma plataforma que visa incentivar a leitura de forma lúdica e interativa. Através de perguntas e desafios relacionados a diversos livros, os usuários acumulam pontos ao responder corretamente, criando assim uma experiência envolvente que estimula o hábito da leitura e promove o conhecimento literário.</h3>
+                    </div>
+                </div>
+
+            </div>
     </div>
-    
-    <header>
-        <nav>
-            <a href="index.html" class="logo">
-                <img src="img/logo.png" alt="Logo Bookadex">
-            </a>
-            <div class="nav-links">
-                <a href="desafio.html"><p>Desafios</p></a>
-                <a href="categorias.html"><p>Categorias</p></a>
-                <a href="ranking.html"><p>Ranking</p></a>
-                <a href="loja.html"><p>Loja</p></a>
-                <!-- <a href="https://api.whatsapp.com/send/?phone=5511984982869&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0"><p>Contato</p></a> -->
-                <a href="../index.html"><p>GINYU TECH</p></a>
+
+    <div class="titleindex fade-down" id="equipe">
+        <h2>Equipe</h2>
+        <p>Equipe Ginyu Tech</p>
+    </div>
+
+    <div class="team-container">
+        <div class="membros">
+          <div class="membro zoom-in">
+            <img src="img/team/SilasTeam3.png" alt="">
+            <div class="membro-info">
+              <div class="membro-info-content">
+                <h4>Silas Ferreira</h4>
+                <span>Full-Stack</span>
+              </div>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/silas-ferreira-de-moura-b4780b2b6/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/SilasFerreira19" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.instagram.com/silas_f3m/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/silas.ferreira.5855594" target="_blank"><i class="bi bi-facebook"></i></a>
+                <!-- <a href="https://www.facebook.com/silas.ferreira.5855594" target="_blank"><i class="bi bi-whatsapp"></i></a> -->
+              </div>
             </div>
-            <div class="nav-right">
-                <a href="premium.html" class="premium-btn">Torne-se Premium</a>
-                <a href="cadastro.html" class="cadastro">Cadastro</a>
-                <a href="login.html" class="login">Login</a>
-                <!-- <div class="tokens">
-                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
-                    <p>504</p>
-                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
-                    <p>100</p>
-                </div>
-                <div class="imgprofile" onclick="toggleDropdown()">
-                    <img src="img/img_perfil/imgprofileLevi.png" alt="">
-                    <div class="profile-dropdown" id="profileDropdown">
-                        <div class="profile-header">
-                            <img src="img/img_perfil/imgprofileLevi.png" alt="Foto de Perfil" class="dropdown-profile-img">
-                            <div>
-                                <p class="profile-username">Nicola Tesla</p>
-                                <p class="profile-name">Levi Nicola Santos</p>
-                                <p class="profile-points"><span>Pontos:</span> 750</p>
-                            </div>
-                        </div>
-                        <ul class="profile-options">
-                            <li><a href="meuperfil.html">Meu Perfil</a></li>
-                            <li><a href="personagem.html">Personagem</a></li>
-                            <li><a href="meusquiz.html">Meus quizzes</a></li>
-                            <li><a href="config.html">Configurações</a></li>
-                            <li><a href="#">Sair</a></li>
-                        </ul>
-                    </div>
-                </div> -->
+          </div>
+          <div class="membro zoom-in">
+            <img src="img/team/MatheusTeam.png" alt="">
+            <div class="membro-info">
+              <div class="membro-info-content">
+                <h4>Matheus Filipe</h4>
+                <span>Front-end, Designer</span>
+              </div>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/matheus-filipe-b383312b3/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Mathz0" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.instagram.com/matt.with2ts/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/matheus.filipe.3304?mibextid=qi2Omg&rdid=sC5PFkp1dfuqmjrV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FGQuyianJW73C2zHm%2F%3Fmibextid%3Dqi2Omg" target="_blank"><i class="bi bi-facebook"></i></a>
+              </div>
             </div>
-        </nav>       
-    </header>
-    
-        <main>
-            <section class="banner">
-            </section>
-    
-            <section class="buttons">
-                <a href="categorias.html"><button class="btn-red">Categorias</button></a>
-                <a href="meusquiz.html"><button class="btn-red">Meus Quizzes</button></a>
-                <a href="personagem.html"><button class="btn-red">Personagem</button></a>
-            </section>
-    
-            <section class="search-bar">
-                <input type="text" placeholder="Pesquisar">
-                <button class="btn-search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                       <!-- <button class="btn-search">Pesquisar</button> -->
-                </button>
-            </section>
-            
-    
-            <section class="quizzes-highlight">
-                <h2>Quizzes em Destaque</h2>
-                <div class="quiz-grid">
-                    <div class="quiz">
-                        <a href="perguntas.html"><img src="img/PequenoPrincipe.png" alt="O Pequeno Príncipe"></a>
-                        <p>O Pequeno Príncipe</p>
-                        <span>Um príncipe visita planetas e reflete sobre a vida, amizade e o que é realmente importante.</span>
-                    </div>
-                    <div class="quiz">
-                        <img src="img/DomQuixote.png" alt="Dom Quixote">
-                        <p>Dom Quixote</p>
-                        <span>Um fidalgo acredita ser cavaleiro e vive aventuras delirantes, confundindo realidade e fantasia.</span>
-                    </div>
-                    <div class="quiz">
-                        <img src="img/BichosRevolucao.png" alt="Revolução dos Bichos">
-                        <p>Revolução dos Bichos</p>
-                        <span>Animais tomam o controle de uma fazenda, mas o poder logo se corrompe.</span>
-                    </div>
-                </div>
-            
-                <h2>Categorias em Destaque</h2>
-                <div class="quiz-grid">
-                    <div class="quiz">
-                        <img src="img/terror.png" alt="Terror">
-                        <p>Terror</p>
-                        <span>Explore o medo, seja através
-                            do sobrenatural ou de situações pertubadoras.</span>
-                    </div>
-                    <div class="quiz">
-                        <img src="img/SUSPENSE.png" alt="Suspense">
-                        <p>Suspense</p>
-                        <span>Está preparado para resolver mistérios e enfrentar suas reviravoltas?</span>
-                    </div>
-                    <div class="quiz">
-                        <img src="img/Fantasia.png" alt="Fantasia">
-                        <p>Fantasia</p>
-                        <span>Mundos mágicos, criaturas fantásticas e heróis em grandes aventuras.</span>
-                    </div>
-                </div>
-            </section>
-
-            <section class="character-section">
-                <div class="character-content">
-                    <h2>Crie seu Personagem!</h2>
-                    <div class="character-description">
-                        <h3>Crie seu Personagem</h3>
-                        <p>Escolha entre diferentes estilos e personalize cada detalhe do seu avatar.</p>
-                    </div>
-                    <div class="character-description">
-                        <h3>Adicione Seu Toque Pessoal</h3>
-                        <p>Modifique cabelo, expressões e acessórios para refletir sua personalidade.</p>
-                    </div>
-                    <div class="character-description">
-                        <h3>Ganhe Pontos e Desbloqueie Itens</h3>
-                        <p>A cada quiz, acumule pontos para liberar novas opções de personalização exclusivas.</p>
-                    </div>
-                    <div class="buttons">
-                        <a href="personagem.html" class="btn primary">Criar Personagem</a>
-                        <a href="loja.html" class="btn secondary">Loja</a>
-                    </div>
-                </div>
-                <div class="character-image">
-                    <img src="img/Personagens.png" alt="Avatares personalizados">
-                </div>
-            </section>
-                       
-            <section class="ranking-challenges-section">
-                <div class="ranking-challenges-container">
-                    <h2>Ranking e Desafios</h2>
-                    <div class="ranking-wrapper">
-                        <!-- Lado esquerdo - Ranking -->
-                        <div class="ranking-description">
-                            <h3>Ranking</h3>
-                            <p>No ranking do nosso quiz literário, você compete com outros leitores e ganha pontos a cada acerto. Suba de posição e prove que é um verdadeiro expert em livros!</p>
-                            <a href="ranking.html" class="btn ranking">Acessar o Ranking</a>
-                        </div>
-            
-                        <!-- Centro - Medalha -->
-                        <div class="medal-image">
-                            <img src="img/medalha de ouro.png" alt="Medalha de Ouro">
-                        </div>
-            
-                        <!-- Lado direito - Desafios -->
-                        <div class="challenges-description">
-                            <h3>Desafios</h3>
-                            <p>Nos desafios do quiz literário, você testa seus conhecimentos sobre livros e personagens. Complete as missões e conquiste recompensas exclusivas enquanto avança no jogo!</p>
-                            <a href="desafio.html" class="btn ranking">Acessar os Desafios</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="reviews-section">
-                <h2>Avaliações</h2>
-                <div class="reviews-container">
-                    <div class="review-card">
-                        <p>“Gostei demais! Criar meu personagem foi incrível”</p>
-                        <div class="reviewer">
-                            <img src="img/avali4.png" alt="Foto do usuário">
-                            <div class="reviewer-info">
-                                <strong>Diego Veras</strong>
-                                <span>Usuário Bookadex</span>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div class="review-card">
-                        <p>“Adorei o quiz, super divertido e criativo!”</p>
-                        <div class="reviewer">
-                            <img src="img/avali2.png" alt="Foto do usuário">
-                            <div class="reviewer-info">
-                                <strong>Ashley</strong>
-                                <span>Usuária Bookadex</span>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div class="review-card">
-                        <p>“O quiz me prendeu e amei criar meu personagem.”</p>
-                        <div class="reviewer">
-                            <img src="img/avali3.png" alt="Foto do usuário">
-                            <div class="reviewer-info">
-                                <strong>Monika</strong>
-                                <span>Usuária Bookadex</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="conheca-ginyu">
-                <h2>Já Conhece a Ginyu?</h2>
-                <div class="buttons">
-                    <a href="../index.html" class="btn black">Ir para o site</a>
-                    <a href="../index.html#sobre" class="btn green">Sobre nós</a>
-                </div>
-            </section>
-
-        </main>
-
-        <footer>
-            <div class="footer-container">
-                <div class="footer-section">
-                    <h4>Navegação:</h4>
-                    <ul>
-                        <li><a href="#">Políticas de privacidade</a></li>
-                        <li><a href="#">Termos de uso</a></li>
-                        <li><a href="https://ginyu-tech.vercel.app/#sobre">Sobre nós</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contato:</h4>
-                    <p>equipe.ginyutech@gmail.com</p>
-                    <p>(11) 98498-2869</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Redes Sociais:</h4>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/people/Ginyu-Tech/61560247050824/"><img src="img/LogoFace.png" alt="Facebook"></a>
-                        <a href="https://mail.google.com/mail/u/0/?fs=1&to=equipe.ginyutech@gmail.com&su=Ol%C3%A1+Ginyu+Tech&body=Gostaria+de+saber+mais+sobre+sua+empresa.&tf=cm"><img src="img/LogoEmail.png" alt="Email"></a>
-                        <a href="https://api.whatsapp.com/send/?phone=5511984982869&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0"><img src="img/LogoWhats.png" alt="Whatsapp"></a>
-                        <a href="https://www.instagram.com/ginyu_tech/"><img src="img/LogoInsta.png" alt="Instagram"></a>
-                    </div>
-                </div>
-                <div class="footer-logo">
-                    <p>BOOKADEX</p>
-                </div>
+          </div>
+          <div class="membro zoom-in">
+            <img src="img/team/JoaoTeam.png" alt="">
+            <div class="membro-info">
+              <div class="membro-info-content">
+                <h4>João Victor</h4>
+                <span>Back-end</span>
+              </div>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/joão-victor-vaz-5aa832236/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/vaz-joao" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.instagram.com/_j0a0vaz/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/joaovictor.vaz.94/" target="_blank"><i class="bi bi-facebook"></i></a>
+              </div>
             </div>
-        </footer>    
-        <script src="js/preloader.js"></script>    
+          </div>
+          <div class="membro zoom-in">
+            <img src="img/team/LeoTeam.png" alt="">
+            <div class="membro-info">
+              <div class="membro-info-content">
+                <h4>Leonardo Jesus</h4>
+                <span>Front-end</span>
+              </div>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/leojesusz" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/leojesusz" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.instagram.com/leojesusz/" target="_blank"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="membro zoom-in">
+            <img src="img/team/HirotaTeam.png" alt="">
+            <div class="membro-info">
+              <div class="membro-info-content">
+                <h4>Gustavo Hirota</h4>
+                <span>Full-Stack</span>
+              </div>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/gustavo-hirota-alves-velho-28b45323b/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/SilasFerreira19" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.instagram.com/dethstruck/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/silas.ferreira.5855594" target="_blank"><i class="bi bi-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <div class="back2">
+        <div class="titleindex fade-down" id="merch">
+          <h2>Merch</h2>
+          <p>Nossos Produtos</p>
+        </div>
 
+        <div class="product-container">
+          <div class="product zoom-in">
+            <div class="img-container">
+              <img src="img/products/shirts/front2.png" alt="" class="main-img">
+              <img src="img/products/shirts/person8_back.png" alt="" class="hover-img">
+            </div>
+            <h2>Camiseta Ginyu Tech</h2>
+          </div>
+          <div class="product zoom-in">
+            <div class="img-container">
+              <img src="img/products/sweatshirt/back.png" alt="" class="main-img">
+              <img src="img/products/sweatshirt/context2.png" alt="" class="hover-img">
+            </div>
+            <h2>Moletom Ginyu Tech</h2>
+          </div>
+          <div class="product zoom-in">
+            <div class="img-container">
+              <img src="img/products/caps/side.png" alt="" class="main-img">
+              <img src="img/products/caps/personfront.png" alt="" class="hover-img">
+            </div>
+            <h2>Boné Ginyu Tech</h2>
+          </div>
+          <div class="product zoom-in">
+            <div class="img-container">
+              <img src="img/products/bookmark/bookmark_front.png" alt="" class="main-img">
+              <img src="img/products/bookmark/bookmark_back.png" alt="" class="hover-img">
+            </div>
+            <h2>Marca Página Ginyu Tech</h2>
+          </div>
+          <div class="product zoom-in">
+            <div class="img-container">
+              <img src="img/products/ToughCases/frontside.png" alt="" class="main-img">
+              <img src="img/products/ToughCases/frontback.png" alt="" class="hover-img">
+            </div>
+            <h2>Capinha Ginyu Tech</h2>
+          </div>
+          <div class="product zoom-in">
+            <div class="img-container">
+              <img src="img/products/mugs/Left2.png" alt="" class="main-img">
+              <img src="img/products/mugs/Right2.png" alt="" class="hover-img">
+            </div>
+            <h2>Caneca Ginyu Tech</h2>
+          </div>
+          <div class="product zoom-in">
+            <div class="img-container">
+              <img src="img/products/keyring/front.png" alt="" class="main-img">
+              <img src="img/products/keyring/context.png" alt="" class="hover-img">
+            </div>
+            <h2>Chaveiro Ginyu Tech</h2>
+          </div>
+          <div class="product zoom-in">
+            <div class="img-container">
+              <img src="img/products/mousepad/front.png" alt="" class="main-img">
+              <img src="img/products/mousepad/context.png" alt="" class="hover-img">
+            </div>
+            <h2>Mousepad Ginyu Tech</h2>
+          </div>
+          <div class="product zoom-in">
+            <div class="img-container">
+              <img src="img/products/backpack/front.png" alt="" class="main-img">
+              <img src="img/products/backpack/top.png" alt="" class="hover-img">
+            </div>
+            <h2>Mochila Ginyu Tech</h2>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="titleindex fade-down" id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato</p>
+      </div>
+
+      <div class="contactcontainer">
+        <div class="contact fade-up">
+          <div class="formcontato">
+            <div class="formspace">
+              <form action="">
+                <h1 class="fade-up">Envie seu <span class="bookadex">Feedback</span></h1>
+                <input type="text" placeholder="Digite seu nome">
+                <input type="text" placeholder="Digite seu e-mail">
+                <textarea id="fixedMessageBox" class="fixed-size" placeholder="Digite sua mensagem"></textarea>
+                <input type="submit" value="Enviar">
+              </form>
+            </div>
+          </div>
+          <div class="mapasocial">
+            <div class="mapspace">
+              <h1 class="fade-up">Localização</h1>
+              <p class="fade-up">Rua Carlos Carvalho, 200.</p>
+              <div class="mapcontainer">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14632.17742511724!2d-46.368908!3d-23.530907!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce65db637f70d7%3A0xc1a4d92fbb31da1!2sFatec%20Ferraz%20de%20Vasconcelos!5e0!3m2!1spt-BR!2sbr!4v1718286944168!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="cont">
+                <h1 class="fade-up">Contato</h1>
+                <h2 class="fade-up">(11)98498-2869 <i class="bi bi-whatsapp"></i></h2>
+                <h2 class="fade-up">equipe.ginyutech@gmail.com <i class="bi bi-envelope-fill mapa"></i></h2>
+              </div>
+              <h1 class="fade-up">Siga-nos</h1>
+              <div class="socialicon">
+                <a  class="fade-up" href="https://www.instagram.com/ginyu_tech/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a class="fade-up" href="https://www.facebook.com/profile.php?id=61560247050824 " target="_blank"><i class="bi bi-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer">
+          <div class="socialstripe">
+            <h2></h2>
+            <a href="https://www.instagram.com/ginyu_tech/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=equipe.ginyutech@gmail.com&su=Olá%20Ginyu%20Tech&body=Gostaria%20de%20saber%20mais%20sobre%20sua%20empresa." target="_blank"><i class="bi bi-google"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61560247050824 " target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://wa.me/5511984982869?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es
+            " target="_blank"><i class="bi bi-whatsapp"></i></a>
+          </div>
+          <!-- 5511986840279 -->
+          <div class="content">
+              <div class="contentuni ginyuname">
+                <h1><span class="bookadex">GINYU</span> TECH</h1>
+                <h2>O poder da leitura <span class="spanda">na era digital</span></h2>
+              </div>
+              <div class="contentuni">
+                <h1>Links Uteis</h1>
+                <ul>
+                  <li><i class="bi bi-arrow-right-circle" style="color: #B197FC;"></i> <a href="#">Inicio</a></li>
+                  <li><i class="bi bi-arrow-right-circle" style="color: #B197FC;"></i> <a href="#sobre">Sobre nós</a></li>
+                  <li><i class="bi bi-arrow-right-circle" style="color: #B197FC;"></i> <a href="#projeto">Projeto</a></li>
+                  <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Termos de serviço</a></li> -->
+                  <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Politica de privacidade</a></li> -->
+                </ul>
+              </div>
+              <div class="contentuni mobilespace">
+                <h1>Contato</h1>
+                <h3><i class="bx bx-map mapa"></i> FATEC Ferraz de Vasconcelos</h3>
+                <h2><i class="bi bi-envelope-fill mapa"></i> equipe.ginyutech@gmail.com</h2>
+                <h2><i class="bi bi-telephone-fill mapa"></i> (11)98498-2869</h2>
+              </div>
+          </div>
+          <div class="copyright">
+            <p>© Copyright <span style="color: #B197FC;">Ginyu Tech™</span> Todos os direitos reservados 2025</p>
+          </div>
+        </div>
+      </footer>
+      
+      <audio id="audio" loop>
+        <source src="segredo/lobisomempidao.mp3" type="audio/mpeg">
+        <!-- Seu navegador não suporta o elemento de áudio. -->
+      </audio>
+<!-- </div> -->
+    <script src="js/ginyu.js"></script>
+    <script src="js/fade.js"></script>
+    <script src="js/preloader.js"></script>
 </body>
 </html>
