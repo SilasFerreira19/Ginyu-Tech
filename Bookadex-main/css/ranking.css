@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+.ranking_container {
+    height: auto; /* em vez de 100vh */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px; /* espaço se necessário */
+}
+
+
+.ranking_title{
+    font-weight: bold;
+    font-size: 30px;
+    color: #00c285;
+    margin: 130px 0 45px 0;
+}
+
+.ranking_table{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: #0c7856;
+    border-radius: 10px;
+}
+
+.ranking_table h2{
+    display: flex;
+    width: 100%;
+    margin-left: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.ranking_table h3{
+    text-align: end;
+    width: 100%;
+    margin-right: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.ranking_table span{
+    margin: 0 27px;
+    padding: 20px 0;
+    font-size: 27px;
+    color: #17a477;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+.ranking_table img{
+    height: 70px;
+    width: 70px;
+}
+
+.position_player{
+    display: flex;
+    padding: 10px 0 10px 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 4px #1c1c1c;
+    transition: 0.5s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.mq10{
+    padding: 10px 0;
+}
+
+.position_player:hover{
+    transform: scale(1.01);
+}
+
+.account_player{
+    background-color: #00c285;
+}
+
+.account_player span{
+    color: #008055;
+}
+
+
