@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <style>
+        @import url(css/perguntas.css);
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Bookadex - Perguntas</title>
+    <link href="img/logo_img.png" rel="icon">
+    <link href="img/logo_img.png" rel="bookadex-icon">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+</head>
+<body>
+    <div class="preloader">
+        <span class="loader"></span>
+    </div>
+    
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo Bookadex">
+            </a>
+            <div class="nav-links">
+                <a href="desafio.html"><p>Desafios</p></a>
+                <a href="categorias.html"><p>Categorias</p></a>
+                <a href="ranking.html"><p>Ranking</p></a>
+                <a href="loja.html"><p>Loja</p></a>
+                <!-- <a href="https://api.whatsapp.com/send/?phone=5511984982869&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0"><p>Contato</p></a> -->
+                <a href="../index.html"><p>GINYU TECH</p></a>
+            </div>
+            <div class="nav-right">
+            <a href="premium.html" class="premium-btn">Torne-se Premium</a>
+                <div class="tokens">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <p>504</p>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <p>100</p>
+                </div>
+                <div class="imgprofile" onclick="toggleDropdown()">
+                    <img src="img/img_perfil/ImgprofileLeo.png" alt="">
+                    <div class="profile-dropdown" id="profileDropdown">
+                        <div class="profile-header">
+                            <img src="img/img_perfil/ImgprofileLeo.png" alt="Foto de Perfil" class="dropdown-profile-img">
+                            <div>
+                                <p class="profile-username">Chris Brown</p>
+                                <p class="profile-name">Leonardo Lima de Jesus</p>
+                                <p class="profile-points"><span>Pontos:</span> 777</p>
+                            </div>
+                        </div>
+                        <ul class="profile-options">
+                            <li><a href="meuperfil.html">Meu Perfil</a></li>
+                            <li><a href="personagem.html">Personagem</a></li>
+                            <li><a href="meusquiz.html">Meus quizzes</a></li>
+                            <li><a href="config.html">Configurações</a></li>
+                            <li><a href="#">Sair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>       
+    </header>
+    <main>
+        <div class="banner_perguntas">
+            <img src="img/img_pergunta/banner_perguntahp.png" alt="">
+        </div>
+
+        <div class="quiz_container">
+            <div class="quiz">
+                <div class="quiztitle">
+                    <p><span class="qnumb">1)</span> Quem é o guardião das chaves e terrenos em Hogwarts? </p>
+                </div>
+                <div class="quizalt">
+                    <h1 class="altborder">A) Alvo Dumbledore</h1>
+                    <h1 class="altborder" data-correct="true">B) Rubeus Hagrid</h1>
+                    <h1 class="altborder">C) Severus Snape</h1>
+                    <h1 class="altborder">D) Minerva McGonagall</h1>
+                </div>
+                <div class="conf">
+                    <h2>Responder</h2>
+                </div>
+            </div>
+
+            <div class="quiz">
+                <div class="quiztitle">
+                    <p><span class="qnumb">2)</span> Qual é o nome do banco onde os bruxos guardam seu dinheiro? </p>
+                </div>
+                <div class="quizalt">
+                    <h1 class="altborder">A) Banco de Hogwarts</h1>
+                    <h1 class="altborder" data-correct="true">B) Gringotes</h1>
+                    <h1 class="altborder">C) Borgin & Burkes</h1>
+                    <h1 class="altborder">D) Banco dos Magos</h1>
+                </div>
+                <div class="conf">
+                    <h2>Responder</h2>
+                </div>
+            </div>
+
+            <div class="quiz">
+                <div class="quiztitle">
+                    <p><span class="qnumb">3)</span> Qual objeto Harry recebe no seu primeiro dia em Hogwarts que o ajuda a jogar Quadribol? </p>
+                </div>
+                <div class="quizalt">
+                    <h1 class="altborder" data-correct="true">A) Vassoura Nimbus 2000</h1>
+                    <h1 class="altborder">B) Varinha das Varinhas</h1>
+                    <h1 class="altborder">C) Mapa do Maroto</h1>
+                    <h1 class="altborder">D) Chapéu Seletor</h1>
+                </div>
+                <div class="conf">
+                    <h2>Responder</h2>
+                </div>
+            </div>
+
+            <div class="quiz">
+                <div class="quiztitle">
+                    <p><span class="qnumb">4)</span> Qual criatura mágica Harry liberta do cativeiro no começo do livro? </p>
+                </div>
+                <div class="quizalt">
+                    <h1 class="altborder">A) Fênix</h1>
+                    <h1 class="altborder">B) Hipogrifo</h1>
+                    <h1 class="altborder">C) Trasgo</h1>
+                    <h1 class="altborder" data-correct="true">D) Troll</h1>
+                </div>
+                <div class="conf">
+                    <h2>Responder</h2>
+                </div>
+            </div>
+            
+            <div class="quiz">
+                <div class="quiztitle">
+                    <p><span class="qnumb">5)</span> Quem é o professor que ensina Poções em Hogwarts no primeiro ano de Harry? </p>
+                </div>
+                <div class="quizalt">
+                    <h1 class="altborder">A) Filius Flitwick</h1>
+                    <h1 class="altborder">B) Remo Lupin</h1>
+                    <h1 class="altborder"  data-correct="true">C) Severus Snape</h1>
+                    <h1 class="altborder">D) Gilderoy Lockhart</h1>
+                </div>
+                <div class="conf">
+                    <h2>Responder</h2>
+                </div>
+            </div>
+            <div class="octopart">
+                <img src="img/img_pergunta/normal.png" alt="Polvo">
+            </div>
+            <div id="resultadoFinal">
+                <h2>Quiz Finalizado, Parabéns!</h2>
+                <p class="pontuacao"></p>
+                <button id="btnRetry" class="btnRetry">Tentar Novamente</button>
+            </div>
+        </div>
+    </main>
+    <div></div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Navegação:</h4>
+                <ul>
+                    <li><a href="#">Políticas de privacidade</a></li>
+                    <li><a href="#">Termos de uso</a></li>
+                    <li><a href="https://ginyu-tech.vercel.app/#sobre">Sobre nós</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato:</h4>
+                <p>equipe.ginyutech@gmail.com</p>
+                <p>(11) 98498-2869</p>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociais:</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/people/Ginyu-Tech/61560247050824/"><img src="img/LogoFace.png" alt="Facebook"></a>
+                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=equipe.ginyutech@gmail.com&su=Ol%C3%A1+Ginyu+Tech&body=Gostaria+de+saber+mais+sobre+sua+empresa.&tf=cm"><img src="img/LogoEmail.png" alt="Email"></a>
+                    <a href="https://api.whatsapp.com/send/?phone=5511984982869&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0"><img src="img/LogoWhats.png" alt="Whatsapp"></a>
+                    <a href="https://www.instagram.com/ginyu_tech/"><img src="img/LogoInsta.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <p>BOOKADEX</p>
+            </div>
+        </div>
+    </footer>    
+    <script src="js/preloader.js"></script>    
+    <script src="js/quiz.js"></script>
+</body>
