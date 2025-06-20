@@ -1,0 +1,106 @@
+.myquiz_container {
+    height: auto; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px; 
+}
+
+
+.myquiz_title{
+    font-weight: bold;
+    font-size: 30px;
+    color: #00c285;
+    margin: 130px 0 45px 0;
+}
+
+.myquiz_boxes {
+    width: 80%;
+}
+
+.myquiz_box {
+    position: relative;
+    overflow: hidden;
+    border: solid 2px #ce0610;
+    height: 270px;
+    border-radius: 20px;
+    background-image: url(../img/img_mq/mq1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 50px; 
+    transition: 0.5s;
+    display: flex;  
+    flex-direction: column; 
+    align-items: end;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+    box-shadow: 0 0 20px #ce0610;
+}
+
+.box2{
+    background-image: url(../img/img_mq/mq2.jpg);
+}
+
+.box3{
+    background-image: url(../img/img_mq/mq3.jpg);
+}
+
+/* .box4{
+    background-image: url(../img/img_desafio/d4.png);
+} */
+
+/* .myquiz_box:hover {
+    transform: scale(1.01);
+    opacity: 80%;
+} */
+
+.myquiz_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%; 
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: white;
+    word-break: break-word; /* quebra de linha para textos longos */
+}
+
+.myquiz_text h1{
+    color: #fdce05;
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+.myquiz_text h2{
+    color: rgb(238, 238, 238);
+    font-size: 20px;
+    margin: 10px 0 40px 0;
+}
+
+.continuebtn{
+    background-color: #ce0610;
+    padding: 10px;
+    border-radius: 10px;
+    width: 15vw;
+    transition: 0.5s;
+}
+
+.continuebtn:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    background-color: rgb(247, 84, 84);
+}
+
+.myquiz_text a{
+    text-decoration: none;
+}
+
+.continuebtn h3{
+    color: rgb(215, 215, 215);
+    font-size: 20px;
+}
