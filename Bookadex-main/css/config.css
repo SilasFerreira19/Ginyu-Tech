@@ -1,0 +1,199 @@
+
+.config_container {
+    height: auto; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px; 
+}
+
+
+.config_title{
+    font-weight: bold;
+    font-size: 20px;
+    color: #00c285;
+    margin: 120px 0 20px 0;
+}
+
+.configcont{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.configopt{
+    background-color: #2c2c2c;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    /* gap: 30px; */
+    width: 200px;
+    border-radius: 5px;
+}
+
+.cadaopt{
+    text-align: justify;
+    padding: 20px;
+
+}
+
+.cadaopt:hover{
+    background-color: #0f0f0f;
+    cursor: pointer;
+}
+
+.configopt h2{
+    text-align: start !important;
+    font-size: 21px;
+    color: #d4d4d4;
+    transition: color 0.5s;
+}
+
+.configopt h2:hover{
+    color: #00c285;
+    cursor: pointer;
+}
+
+.cadaopt.active{
+    background-color: #0f0f0f;
+
+}
+
+.configopt h2.active {
+    color: #00c285;
+    /* text-decoration: underline; */
+}
+
+
+.configswitch{
+    background-color: #2c2c2c;
+    height: 65vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    /* padding: 30px; */
+    text-align: start;
+    border-radius: 5px;
+    padding: 40px 0 0 40px;
+}
+
+.switchop{
+    margin-bottom: 35px;
+}
+
+.switchop h3{
+    color: #d4d4d4;
+    font-size: 23px;
+    margin-bottom: 10px;
+
+}
+
+.configcont p{
+    color: #d4d4d4;
+    font-size: 17px;
+
+}
+
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 70px;
+      height: 30px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #141414;
+      border-radius: 34px;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 24px;
+      width: 24px;
+      left: 3px;
+      bottom: 3px;
+      background-color: #00c78c; /* Verde quando desligado */
+      transition: .4s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider {
+      background-color: #00c78c; /* Verde */
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(40px); /* 70 - 24 (largura da bolinha) - 6 (margens) */
+      background-color: rgb(19, 19, 19); /* Fica escura quando ligado */
+    }
+
+
+.myaccount h3{
+    color: #00c285; 
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.myaccount p{
+    color: #d4d4d4; 
+    margin: 15px 0 15px 0;
+    font-size: 19px;
+}
+
+.myaccount span{
+    color: #00c285;
+}
+
+.myaccount h4{
+    color: #d4d4d4; 
+    margin: 40px 0 0 0;
+}
+
+.privalayout{
+  max-height: 400px; 
+  overflow-y: auto;
+  padding-right: 10px; 
+}
+
+.privalayout h3{
+    color: #d4d4d4; 
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+}
+
+.privalayout li{
+    color: #d4d4d4;
+    margin: 7px 0 7px 7px;
+}
+
+html {
+    font-size: 16px; /* Base = 1rem */
+}
+
+.configcont p {
+    font-size: 1.0625rem; /* 17px */
+}
+
+html.enlarged-font {
+    font-size: calc(100% + 4px); /* Aumenta tudo em 2px */
+}
+
+
