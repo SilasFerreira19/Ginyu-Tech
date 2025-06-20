@@ -16,3 +16,19 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 500);
     }, 2500);
 });
+
+//=================== Dropdown ===============================================
+
+    function toggleDropdown() {
+        const dropdown = document.getElementById("profileDropdown");
+        dropdown.classList.toggle("show");
+    }
+
+    // Fecha o dropdown ao clicar fora
+    window.addEventListener('click', function(e) {
+        const profile = document.querySelector('.imgprofile');
+        const dropdown = document.getElementById("profileDropdown");
+        if (!profile.contains(e.target)) {
+            dropdown.classList.remove("show");
+        }
+    });
