@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/desafio.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Bookadex - Desafios</title>
+    <link href="img/logo_img.png" rel="icon">
+    <link href="img/logo_img.png" rel="bookadex-icon">
+    <link rel="stylesheet" href="css/preloader.css">
+</head>
+<body>
+    <div class="preloader">
+        <span class="loader"></span>
+    </div>
+    
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo Bookadex">
+            </a>
+            <div class="nav-links">
+                <a href="desafio.html"><p>Desafios</p></a>
+                <a href="categorias.html"><p>Categorias</p></a>
+                <a href="ranking.html"><p>Ranking</p></a>
+                <a href="loja.html"><p>Loja</p></a>
+                <!-- <a href="https://api.whatsapp.com/send/?phone=5511984982869&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0"><p>Contato</p></a> -->
+                <a href="../index.html"><p>GINYU TECH</p></a>
+            </div>
+            <div class="nav-right">
+                <a href="premium.html" class="premium-btn">Torne-se Premium</a>
+                <div class="tokens">
+                    <img class="polvoeda" src="img/img_loja/polvoeda.png" alt="">
+                    <p>504</p>
+                    <img class="mdldi" src="img/img_loja/octoken.png" alt="">
+                    <p>100</p>
+                </div>
+                <div class="imgprofile" onclick="toggleDropdown()">
+                    <img src="img/img_perfil/imgprofileRyan.png" alt="">
+                    <div class="profile-dropdown" id="profileDropdown">
+                        <div class="profile-header">
+                            <img src="img/img_perfil/imgprofileRyan.png" alt="Foto de Perfil" class="dropdown-profile-img">
+                            <div>
+                                <p class="profile-username">YSouzaSy</p>
+                                <p class="profile-name">Ryan Dias Rocha</p>
+                                <p class="profile-points"><span>Pontos:</span> 569</p>
+                            </div>
+                        </div>
+                        <ul class="profile-options">
+                            <li><a href="meuperfil.html">Meu Perfil</a></li>
+                            <li><a href="personagem.html">Personagem</a></li>
+                            <li><a href="meusquiz.html">Meus quizzes</a></li>
+                            <li><a href="config.html">Configurações</a></li>
+                            <li><a href="#">Sair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>       
+    </header>
+    <main>
+        <div class="challenge_container">
+            <div class="challenge_title">
+                <h1>Desafios</h1>
+            </div>
+            <div class="challenge_boxes">
+                <div class="challenge_box">
+                    <div class="challenge_text">
+                        <h1>Mais rápido que um raio</h1>
+                        <h2>Neste desafio relâmpago, o tempo não é seu amigo: Finalize um quiz em 1 minuto ou menos</h2>
+                    </div>
+                </div>
+                 <div class="challenge_box box2">
+                    <div class="challenge_text">
+                        <h1>Sereia do Saber</h1>
+                        <h2>Encante o mar com seu conhecimento. Mas cuidado: não erre nenhuma, um erro e o encanto se quebra.</h2>
+                    </div>
+                </div>
+                 <div class="challenge_box box3">
+                    <div class="challenge_text">
+                        <h1>Modo Zen</h1>
+                        <h2>Neste desafio, a vitória não é dos velozes, mas dos pacientes: espere pelo menos 10 minutos pra finalizar um quiz</h2>
+                    </div>
+                </div>
+                  <div class="challenge_box box4">
+                    <div class="challenge_text">
+                        <h1>Síndrome de meia-idade</h1>
+                        <h2>O asilo parece que abriu as portas, hora de mostrar o poder da terceira idade: realize 10 quizzes de livros escritos antes de 1940</h2>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </main>
+
+    <script src="js/preloader.js"></script> 
+
+</body>
