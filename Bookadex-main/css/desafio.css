@@ -62,6 +62,10 @@ body{
     background-image: url(../img/img_desafio/d4.png);
 }
 
+.box5{
+    background-image: url(../img/img_desafio/d5.png);
+}
+
 .challenge_box:hover {
     transform: scale(1.01);
     opacity: 80%;
