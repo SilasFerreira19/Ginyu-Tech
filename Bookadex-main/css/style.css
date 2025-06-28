@@ -1,6 +1,12 @@
 /* Importa a fonte Chakra Petch */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
 
+/* body.font-aumentada {
+  font-size: calc(1em + 2px);
+} */
+
+
+
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif;
@@ -29,7 +35,7 @@ nav {
 
 nav div a {
     display: inline-block;
-    color: white;
+    color: #d4d4d4;
     margin-right: 40px;
     text-decoration: none;
     transition: 0.5s;
@@ -135,7 +141,7 @@ nav div a:hover{
     border: none;
     border-radius: 5px 0 0 5px;
     width: 750px;
-    height: 25px;
+    height: 45px;
 }
 
 .btn-search {
@@ -596,3 +602,4 @@ footer {
         width: 90%;
     }
 }
+
