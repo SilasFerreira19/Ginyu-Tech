@@ -38,7 +38,7 @@
 .cadaopt{
     text-align: justify;
     padding: 20px;
-
+    transition: 0.5s;
 }
 
 .cadaopt:hover{
@@ -54,7 +54,7 @@
 }
 
 .configopt h2:hover{
-    color: #00c285;
+    /* color: #00c285; */
     cursor: pointer;
 }
 
