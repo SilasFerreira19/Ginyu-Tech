@@ -1,5 +1,5 @@
 body{
-    background-color: #c1c1c1;
+    background-color: #E4E4E4;
 }
 
 /* Header */
@@ -8,7 +8,7 @@ header {
     top: 0;
     width: 100%;
     padding: 10px 20px;
-    background-color: #c5c5c5;
+    background-color: #F1F0EC;
     display: flex;
     z-index: 99;
     /* border-bottom: 2px #32b7cb solid; */
@@ -52,7 +52,7 @@ nav div a:hover{
 }
 
 .nav-right .premium-btn {
-    background-color: #32b7cb;
+    background-color: #43d3e9;
     color: #232323;
     font-weight: bold;
     padding: 10px 20px;
@@ -95,7 +95,7 @@ nav div a:hover{
 }
 
 .configopt{
-    background-color: #969696;
+    background-color: #F1F0EC;
     height: 65vh;
     display: flex;
     flex-direction: column;
@@ -107,6 +107,7 @@ nav div a:hover{
 .cadaopt{
     text-align: justify;
     padding: 20px;
+    transition: 0.5s;
 
 }
 
@@ -123,7 +124,7 @@ nav div a:hover{
 }
 
 .configopt h2:hover{
-    color: #32b7cb;
+    /* color: #43d3e9; */
     cursor: pointer;
 }
 
@@ -139,7 +140,7 @@ nav div a:hover{
 
 
 .configswitch{
-    background-color: #969696;
+    background-color: #F1F0EC;
     height: 65vh;
     width: 60vw;
     display: flex;
